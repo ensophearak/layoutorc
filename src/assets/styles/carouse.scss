@@ -1,0 +1,129 @@
+// /* CUSTOMIZE THE CAROUSEL
+// -------------------------------------------------- */
+// /* Carousel base class */
+// .carousel {
+//     margin-bottom: 4rem;
+// }
+// /* Since positioning the image, we need to help out the caption */
+// .carousel-caption {
+//     bottom: 3rem;
+//     z-index: 10;
+// }
+// /* Declare heights because of positioning of img element */
+// .carousel-item {
+//     height: 32rem;
+//     background-color: #777;
+// }
+// .carousel-item>img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     min-width: 100%;
+//     height: 32rem;
+// }
+// /* MARKETING CONTENT
+//   -------------------------------------------------- */
+// /* Center align the text within the three columns below the carousel */
+// .marketing .col-lg-4 {
+//     margin-bottom: 1.5rem;
+//     text-align: center;
+// }
+// .marketing h2 {
+//     font-weight: 400;
+// }
+// .marketing .col-lg-4 p {
+//     margin-right: .75rem;
+//     margin-left: .75rem;
+// }
+// /* Featurettes
+//   ------------------------- */
+// .featurette-divider {
+//     margin: 5rem 0;
+//     /* Space out the Bootstrap <hr> more */
+// }
+// /* Thin out the marketing headings */
+// .featurette-heading {
+//     font-weight: 300;
+//     line-height: 1;
+//     letter-spacing: -.05rem;
+// }
+// /* RESPONSIVE CSS
+//   -------------------------------------------------- */
+// @media (min-width: 40em) {
+//     /* Bump up size of carousel content */
+//     .carousel-caption p {
+//         margin-bottom: 1.25rem;
+//         font-size: 1.25rem;
+//         line-height: 1.4;
+//     }
+//     .featurette-heading {
+//         font-size: 50px;
+//     }
+// }
+// @media (min-width: 62em) {
+//     .featurette-heading {
+//         margin-top: 7rem;
+//     }
+// }
+.material-icons {
+    direction: ltr;
+    display: inline-block;
+    font-family: 'Material Icons';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none !important;
+    cursor: pointer;
+    &:before {
+        @extend .material-icons;
+        font-size: 48px;
+        color: #fff;
+    }
+}
+
+.carousel-control-prev-icon {
+    &:before {
+        content: 'arrow_back_ios';
+    }
+}
+
+.carousel-control-next-icon {
+    &:before {
+        content: 'arrow_forward_ios';
+    }
+}
+
+.home-slide {
+    height: 520px;
+    padding: 0 !important;
+    .swiper-wrapper {
+        height: 100%;
+        .swiper-slide {
+            overflow: hidden !important;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .carousel-caption {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        right: inherit;
+        bottom: 0;
+        left: 15%;
+        top: 0;
+    }
+}
