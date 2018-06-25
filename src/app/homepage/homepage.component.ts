@@ -42,5 +42,18 @@ export class HomepageComponent implements OnInit {
     pagination: true,
 
   };
+  public config1: SwiperConfigInterface = {
+    a11y: true,
+    direction: 'horizontal',
+    slidesPerView: 4,
+    keyboard: true,
+    spaceBetween:24,
+    effect: 'slide',
+    mousewheel: false,
+    scrollbar: false,
+    navigation: true,
+    pagination: false,
+
+  };
 }
 

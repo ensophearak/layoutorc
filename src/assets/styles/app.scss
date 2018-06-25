@@ -39,9 +39,19 @@
         color: #fff;
         text-transform: uppercase;
         margin-right: 32px;
+        svg {
+            overflow: hidden;
+            width: 126px;
+            fill: #fff;
+        }
     }
     .navbar {
         padding: 0;
+    }
+    .nav-link {
+        display: flex;
+        padding: 8px 16px !important;
+        font-weight: 500;
     }
     .navbar-collapse {
         padding: 12px 0;
@@ -85,6 +95,7 @@
         white-space: nowrap;
         background: #e6edf0;
         transition: background .3s ease;
+        margin-left: 16px;
         &:before {
             background-position: 0 -140px;
             background-size: 26px auto;
